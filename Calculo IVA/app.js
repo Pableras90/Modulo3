@@ -40,15 +40,17 @@ let priceTot = total+iva
 
 console.log ("El precio total es"+" " +priceTot);
 
-//
+//iva+product.price*product.count
 
-var countPrice = {
-    
+
+
+
+function getVat(product){
+  product.price+iva
 }
 
-console.log (countPrice(priceTot,count));
+function getTotalVat(product) {
+    return product.count > 0 ? product.count * getVat(product) : 0;
+  }
 
-
-/*function getTotalVat(product) {
-    return product.count > 0 ? product.count \* getVat(product) : 0;
-  }*/
+  console.log(getTotalVat)
